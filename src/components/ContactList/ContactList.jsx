@@ -4,18 +4,17 @@ import { List } from './ContactList.styled';
 const ContactList = ({ contacts, onDelete }) => {
   return (
     <List>
-      {contacts &&
-        contacts.map(contact => {
-          return (
-            <li key={contact.id}>
-              <p>{contact.name}</p>
-              <p>{contact.number}</p>
-              <button onClick={() => onDelete(contact.id)} type="button">
-                X
-              </button>
-            </li>
-          );
-        })}
+      {contacts.map(contact => {
+        return (
+          <li key={contact.id}>
+            <p>{contact.name}</p>
+            <p>{contact.number}</p>
+            <button onClick={() => onDelete(contact.id)} type="button">
+              X
+            </button>
+          </li>
+        );
+      })}
     </List>
   );
 };

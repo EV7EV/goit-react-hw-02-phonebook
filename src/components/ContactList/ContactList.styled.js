@@ -18,6 +18,7 @@ const List = styled.ul`
     padding: 4px 8px;
     min-width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     border-radius: 4px;
     background-color: white;
@@ -25,9 +26,6 @@ const List = styled.ul`
 
   button {
     background-color: rgb(255 152 0);
-    right: 15px;
-    position: relative;
-    top: 15px;
     font-size: 10px;
     border-radius: 50%;
     padding: 5px;
